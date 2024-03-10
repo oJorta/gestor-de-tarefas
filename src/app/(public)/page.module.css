@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+} 
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.loginHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.input {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: inherit;
+    padding: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+}
+
+.button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.2s;
+}

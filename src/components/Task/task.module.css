@@ -1,0 +1,54 @@
+.taskContainer {
+    width: 100%;
+    max-width: 450px;
+    max-height: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+.taskContainer header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options input[type="checkbox"] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.options {
+    display: flex;
+    align-items: baseline;
+    gap: .3rem;
+}
+
+.options button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    font-size: 1.3rem;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.options button:hover {
+    color: var(--tertiary-color);
+}
+
+.taskInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    font-size: 16px;
+    text-wrap: wrap;
+    color: #fff;
+    overflow: hidden;
+}
