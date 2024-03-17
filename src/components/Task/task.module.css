@@ -52,3 +52,11 @@
     color: #fff;
     overflow: hidden;
 }
+
+.finished header,
+.finished .description {
+    text-decoration: line-through;
+    color: var(--tertiary-color);
+}
+
+.finished {}

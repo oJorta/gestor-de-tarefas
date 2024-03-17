@@ -82,3 +82,11 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 600px) {
+    .modalContent {
+        width: 80%;
+        padding: 1.5rem;
+    }
+    
+}
