@@ -12,15 +12,6 @@
     gap: 2rem;
 }
 
-.main {
-    margin-top: 2rem;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    justify-items: center;
-    gap: 2rem;
-}
-
 .modal {
     display: flex;
     align-items: center;
@@ -30,14 +21,14 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);    
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modalContent {
-    border-radius: 5px;
-    margin: 0 auto;
     width: 60%;
     max-width: 550px;
+    margin: 0 auto;
+    border-radius: 5px;
     padding: 2rem;
     background-color: var(--secondary-color);
 }
@@ -55,7 +46,7 @@
 
 .modalContent input[type="text"] {
     width: 100%;
-    padding: .5rem 1rem;
+    padding: .5rem;
     border: none;
     outline: none;
     border-radius: 2px;
@@ -83,10 +74,18 @@
     justify-content: space-between;
 }
 
+.main {
+    margin-top: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    justify-items: center;
+    gap: 2rem;
+}
+
 @media screen and (max-width: 600px) {
     .modalContent {
         width: 80%;
         padding: 1.5rem;
     }
-    
 }
