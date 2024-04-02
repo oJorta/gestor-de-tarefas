@@ -6,7 +6,7 @@ import { FormEvent, useState } from "react"
 import Button from "@/components/Button"
 import Task from "@/components/Task"
 import Priority from "@/components/Priority"
-import PrivateRoute from "@/components/PrivateRoute/page"
+import PrivateRoute from "@/components/PrivateRoute"
 
 interface Task {
     id: number;

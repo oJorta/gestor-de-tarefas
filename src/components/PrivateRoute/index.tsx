@@ -1,7 +1,7 @@
 import { useRouter } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
 
-export default function PrivateRoute ({ children }: { children: ReactNode }) {
+export default function PrivateRoute ({ children }: { children: ReactNode}) {
     const router = useRouter()
     const [isAuthenticated, setIsAuthenticated] = useState(false)
 
