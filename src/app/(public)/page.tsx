@@ -2,13 +2,23 @@
 import Button from "@/components/Button";
 import styles from "./page.module.css";
 import { useRouter } from "next/navigation";
+import axios from "axios";
 
 export default function Login() {
   const router = useRouter();
 
-  function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function handleFormSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    router.push('/tasks');
+    await axios
+      .post('http://localhost:3000/api/login', {
+        email: 'matheus@email.com',
+        password: '123456@Mc',
+      })
+      .then((res) => {
+        console.log(res.data)
+        localStorage.setItem('token', res.data.accessToken);
+        router.push('/tasks');
+      });
   }
 
   return (

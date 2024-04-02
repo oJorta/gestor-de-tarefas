@@ -6,6 +6,7 @@ import { FormEvent, useState } from "react"
 import Button from "@/components/Button"
 import Task from "@/components/Task"
 import Priority from "@/components/Priority"
+import PrivateRoute from "@/components/PrivateRoute/page"
 
 interface Task {
     id: number;
@@ -51,7 +52,7 @@ export default function Tasks () {
     }
 
     return (
-        <>
+        <PrivateRoute>
             {modalIsOpen && (
                 <div className={styles.modal}>
                     <div className={styles.modalContent}>
@@ -173,6 +174,6 @@ export default function Tasks () {
 
                 </main>
             </div>
-        </>
+        </PrivateRoute>
     )
 }
